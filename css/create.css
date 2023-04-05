@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -67,21 +68,48 @@ nav ul li a:hover{
 
 .detel{
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 10%;
+    
 }
 
 .detel h1{
+
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
     font-size: 50px;
     color: skyblue;
     margin-bottom: 20px;
-    
+    font-family: arial;
+    animation: typing 2s steps(40), cursor .1s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0}
 }
 
 .detel p{
     color: #c5c6c7;
     line-height: 22px;
     font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 39%;
+    font-size: medium;
+    margin-bottom: 20px;
+    font-family: arial;
+    animation: typing 1.5s steps(40), cursor .1s step-end infinite alternate;
 }
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0}
+}
+
 
 a:link {
     text-decoration: none;
@@ -98,6 +126,9 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+
+
 
 
 
